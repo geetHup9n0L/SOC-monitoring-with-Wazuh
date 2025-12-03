@@ -1,6 +1,7 @@
 ## Environment Setup and Installation:
 
 Our environment will be virtualized through the use of VMware
+
 https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion
 
 We will simulate the lab with different Virtual Machines acts as Server and Endpoints:
@@ -12,3 +13,4 @@ We will simulate the lab with different Virtual Machines acts as Server and Endp
 Here are .iso files links:
 * https://ubuntu.com/download/desktop
 * https://www.microsoft.com/en-us/software-download/windows10
+
