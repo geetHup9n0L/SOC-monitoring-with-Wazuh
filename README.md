@@ -10,3 +10,7 @@ Wazuh is the most widely adopted open-source cybersecurity platform, unifying XD
 VirusTotal is a website that scans files, webpages, domains, and IPs, against a large number of antivirus scanners. This allows a user to get feedback from a large number of sources and helps them determine if something is known to be malicious or known to be benign.
 
 ## [1. Environment Setup & Installation:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/01-installation.md)
+
+## [2. Configuring FIM:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/02-fim-setup.md)
+
+## [3. Automation Logic:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/03-automation.md)
