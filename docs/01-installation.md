@@ -14,3 +14,6 @@ Here are .iso files links:
 * https://ubuntu.com/download/desktop
 * https://www.microsoft.com/en-us/software-download/windows10
 
+Here is diagram of our lab:
+<img width="1075" height="553" alt="image" src="https://github.com/user-attachments/assets/516fa699-20e7-46a2-a862-bdb396efea59" />
+
