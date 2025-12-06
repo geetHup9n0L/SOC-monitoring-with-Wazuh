@@ -42,10 +42,19 @@ Regarding hardware requirement for the server:
 
 Installing Wazuh on Server:
 * Download and run the Wazuh installation assistant:
+
+  First, we have to elevate to root user to implement the next steps:
+  ```
+  sudo bash
+  ```
+
+* Download and run the Wazuh installation assistant.
+
   ```bash
   curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
   ```
 * Once the assistant finishes the installation, the output shows the access credentials and a message that confirms that the installation was successful.
+  
   ```bash
   INFO: --- Summary ---
   INFO: You can access the web interface https://<WAZUH_DASHBOARD_IP_ADDRESS>
@@ -60,4 +69,5 @@ Installing Wazuh on Server:
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
