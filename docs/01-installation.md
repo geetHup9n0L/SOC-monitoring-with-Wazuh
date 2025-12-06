@@ -33,8 +33,26 @@ We setup Ubuntu VM as a server to run the central components of Wazuh.
 This Wazuh server will run all the core components, and its where SIEM, Web application take place, as well as where all Agents send its reports to.
 
 Regarding hardware requirement for the server:
+
 <img width="452" height="238" alt="image" src="https://github.com/user-attachments/assets/3d708901-5eb8-4a05-baef-95571cdafac0" />
-Our project scales within an individual homelab, so the first option greatly suffices our needs
+
+* Our project scales within an individual homelab, so the first option greatly suffices our needs.
+
+* And the server's version: Ubuntu 24.04LTS validate the supported architecture
+
+Installing Wazuh on Server:
+* Download and run the Wazuh installation assistant:
+  ```bash
+  curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
+  ```
+* Once the assistant finishes the installation, the output shows the access credentials and a message that confirms that the installation was successful.
+  ```bash
+  INFO: --- Summary ---
+  INFO: You can access the web interface https://<WAZUH_DASHBOARD_IP_ADDRESS>
+      User: admin
+      Password: <ADMIN_PASSWORD>
+  INFO: Installation finished.
+  ```
 
 
 - Clone another Ubuntu VM and Window VM as endpoints with Wazuh Agents
@@ -42,3 +60,4 @@ Our project scales within an individual homelab, so the first option greatly suf
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
