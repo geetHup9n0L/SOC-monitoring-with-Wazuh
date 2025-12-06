@@ -63,11 +63,13 @@ Installing Wazuh on Server:
   INFO: Installation finished.
   ```
 
-
+### Wazuh Agents
+```
 - Clone another Ubuntu VM and Window VM as endpoints with Wazuh Agents
-
+```
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
