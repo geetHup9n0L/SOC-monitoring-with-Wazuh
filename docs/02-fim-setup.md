@@ -1,2 +1,4 @@
+# File Integrity Monitoring Setup
 - Introduce to FIM (File Integrity Monitoring) enables the monitoring of an endpoint's filesystem to detect and alert on changes to specified files, directories, and Windows Registry keys.
 - Congifure FIM on the Wazuh Agent  (agent.conf), and inspect logs in FIM: Recent events
+
