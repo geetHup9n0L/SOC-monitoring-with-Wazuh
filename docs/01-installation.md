@@ -47,9 +47,6 @@ Installing Wazuh on Server:
   ```
   sudo bash
   ```
-
-* Download and run the Wazuh installation assistant.
-
   ```bash
   curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
   ```
@@ -70,6 +67,7 @@ Installing Wazuh on Server:
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
