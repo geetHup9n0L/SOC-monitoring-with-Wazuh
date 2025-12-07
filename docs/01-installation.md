@@ -41,12 +41,12 @@ Regarding hardware requirement for the server:
 * And the server's version: Ubuntu 24.04LTS validate the supported architecture
 
 Installing Wazuh on Server:
-* Download and run the Wazuh installation assistant:
 
-  First, we have to elevate to root user to implement the next steps:
+* First, we have to elevate to root user to implement the next steps:
   ```
   sudo bash
   ```
+* Download and run the Wazuh installation assistant:
   ```bash
   curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
   ```
@@ -67,6 +67,7 @@ Installing Wazuh on Server:
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
