@@ -90,6 +90,8 @@ Installing Wazuh on Server:
 
   <img width="1853" height="897" alt="image" src="https://github.com/user-attachments/assets/205b8985-4ab0-43ef-8f6a-e7767ee19304" />
 
+  <img width="649" height="2143" alt="image" src="https://github.com/user-attachments/assets/86dbb913-0e12-4a19-816a-cda1eff8ba23" />
+  
   Here, we deploy Agents for 2 endusers respectively:
   
   * Ubuntu 24.04LTS (2)
@@ -104,13 +106,28 @@ Installing Wazuh on Server:
     2. Server address: 192.168.127.129
     3. Agent name: Window-enduser
     ```
-  <img width="649" height="2143" alt="image" src="https://github.com/user-attachments/assets/86dbb913-0e12-4a19-816a-cda1eff8ba23" />
+  For example:
   <img width="1852" height="1838" alt="image" src="https://github.com/user-attachments/assets/bdefa8ae-8ff9-46a8-959f-236bf7be0745" />
 
+  Run the command corresponding to each enduser's system. This is going to register the Agent with the Wazuh SIEM server:
+  * Ubuntu 24.04LTS (2)
+    
+    <img width="807" height="124" alt="image" src="https://github.com/user-attachments/assets/40b9b40b-641a-4310-bcc9-6e986a8cc840" />
+
+    And start the Agent:
+ 
+    <img width="807" height="70" alt="image" src="https://github.com/user-attachments/assets/127f25f4-743a-4e07-8a4c-52e0105215a5" />
+
+  * Window 10 x64
+
+    <img width="840" height="150" alt="image" src="https://github.com/user-attachments/assets/d09bf55b-8e34-4150-b0ed-1acec81cd21b" />
+
+    <img width="857" height="197" alt="image" src="https://github.com/user-attachments/assets/21fb7850-2707-4e5e-8f04-6b816391337a" />
 
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
