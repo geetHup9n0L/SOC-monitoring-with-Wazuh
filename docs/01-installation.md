@@ -105,10 +105,13 @@ Installing Wazuh on Server:
     3. Agent name: Window-enduser
     ```
   <img width="649" height="2143" alt="image" src="https://github.com/user-attachments/assets/86dbb913-0e12-4a19-816a-cda1eff8ba23" />
+  <img width="1852" height="1838" alt="image" src="https://github.com/user-attachments/assets/bdefa8ae-8ff9-46a8-959f-236bf7be0745" />
+
 
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
