@@ -50,6 +50,9 @@ Installing Wazuh on Server:
   ```bash
   curl -sO https://packages.wazuh.com/4.14/wazuh-install.sh && sudo bash ./wazuh-install.sh -a
   ```
+  <img width="806" height="121" alt="image" src="https://github.com/user-attachments/assets/0689a789-0060-406f-9d1a-3941fe7143d2" />
+  <img width="918" height="94" alt="image" src="https://github.com/user-attachments/assets/d764a7cf-4152-4d97-98a2-ce79f846dafc" />
+
 * Once the assistant finishes the installation, the output shows the access credentials and a message that confirms that the installation was successful.
   
   ```bash
@@ -59,6 +62,17 @@ Installing Wazuh on Server:
       Password: <ADMIN_PASSWORD>
   INFO: Installation finished.
   ```
+  <img width="919" height="157" alt="image" src="https://github.com/user-attachments/assets/e1aec20b-b599-45ba-a2aa-fb1b3ea5b147" />
+
+  Once the installation is finished, we can access the Wazuh Dashboard
+
+  We are provided with credential, and the web interface at `https://<wazuh-dashboard-ip>:443`
+    * We find `<wazuh-dashboard-ip>` with command `ip a`:
+      
+      <img width="1008" height="310" alt="image" src="https://github.com/user-attachments/assets/9112b0e4-a716-4572-8c8b-bea1c1808c1a" />
+
+  
+
 
 ### Wazuh Agents
 ```
@@ -67,6 +81,7 @@ Installing Wazuh on Server:
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
