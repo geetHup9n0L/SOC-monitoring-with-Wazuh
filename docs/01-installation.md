@@ -71,7 +71,8 @@ Installing Wazuh on Server:
       
   <img width="1008" height="310" alt="image" src="https://github.com/user-attachments/assets/9112b0e4-a716-4572-8c8b-bea1c1808c1a" />
 
-  Login with provided credentials from before: 
+  On the web interface, login with provided credentials from before:
+  
   <img width="648" height="722" alt="image" src="https://github.com/user-attachments/assets/f15fa03b-9e84-455c-a912-bee1f9b49950" />
 
 
@@ -83,6 +84,7 @@ Installing Wazuh on Server:
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
