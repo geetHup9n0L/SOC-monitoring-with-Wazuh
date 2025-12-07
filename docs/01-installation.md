@@ -1,4 +1,5 @@
 # Environment Setup and Installation:
+___
 ## I. Enviroment Setup
 Our environment will be virtualized through the use of VMware
 
@@ -17,6 +18,7 @@ Here are .iso files links:
 Here is diagram of our lab:
 <img width="1075" height="553" alt="image" src="https://github.com/user-attachments/assets/516fa699-20e7-46a2-a862-bdb396efea59" />
 
+___
 ## II. Installation:
 Overview installation as mentioned:
 * 1 Ubuntu 24.04LTS: Wazuh Manager
@@ -122,9 +124,12 @@ Installing Wazuh on Server:
 
     <img width="857" height="197" alt="image" src="https://github.com/user-attachments/assets/21fb7850-2707-4e5e-8f04-6b816391337a" />
 
+And here is our dashboard:
+<img width="1275" height="637" alt="image" src="https://github.com/user-attachments/assets/b7c66cf3-237c-434e-a9d9-aea9a71a2708" />
 
-
+___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
