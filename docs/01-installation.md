@@ -84,15 +84,32 @@ Installing Wazuh on Server:
 ```
 - Clone another Ubuntu VM and Window VM as endpoints with Wazuh Agents
 ```
-Now, to have Wazuh agents installed on endusers - our other VMs
+  Now, to have Wazuh agents installed on endusers - our other VMs
 
-On top-left of homepage, we deploy new Agents:
+  On top-left of homepage, we deploy new Agents:
 
-<img width="1853" height="897" alt="image" src="https://github.com/user-attachments/assets/205b8985-4ab0-43ef-8f6a-e7767ee19304" />
+  <img width="1853" height="897" alt="image" src="https://github.com/user-attachments/assets/205b8985-4ab0-43ef-8f6a-e7767ee19304" />
+
+  Here, we deploy Agents for 2 endusers respectively:
+  
+  * Ubuntu 24.04LTS (2)
+    ```
+    1. Linux: DEB amd64
+    2. Server address: 192.168.127.129
+    3. Agent name: Ubuntu-enduser
+    ```
+  * Window 10 x64
+    ```
+    1. Windows: MSI 32/64 bits
+    2. Server address: 192.168.127.129
+    3. Agent name: Window-enduser
+    ```
+  <img width="649" height="2143" alt="image" src="https://github.com/user-attachments/assets/86dbb913-0e12-4a19-816a-cda1eff8ba23" />
 
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
