@@ -120,13 +120,12 @@ Installing Wazuh on Server:
 
   * Window 10 x64
 
-    <img width="840" height="150" alt="image" src="https://github.com/user-attachments/assets/d09bf55b-8e34-4150-b0ed-1acec81cd21b" />
-
     <img width="857" height="197" alt="image" src="https://github.com/user-attachments/assets/21fb7850-2707-4e5e-8f04-6b816391337a" />
 
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
