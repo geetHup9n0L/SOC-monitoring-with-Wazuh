@@ -75,15 +75,25 @@ Installing Wazuh on Server:
   
   <img width="648" height="722" alt="image" src="https://github.com/user-attachments/assets/f15fa03b-9e84-455c-a912-bee1f9b49950" />
 
+  And here is our homepage of Wazuh:
+
+  <img width="1852" height="897" alt="image" src="https://github.com/user-attachments/assets/635df29f-5700-44a2-b011-459f5fa2c792" />
 
 
 ### Wazuh Agents
 ```
 - Clone another Ubuntu VM and Window VM as endpoints with Wazuh Agents
 ```
+Now, to have Wazuh agents installed on endusers - our other VMs
+
+On top-left of homepage, we deploy new Agents:
+
+<img width="1853" height="897" alt="image" src="https://github.com/user-attachments/assets/205b8985-4ab0-43ef-8f6a-e7767ee19304" />
+
 
 
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
