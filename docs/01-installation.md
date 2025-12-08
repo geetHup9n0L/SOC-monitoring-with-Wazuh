@@ -133,11 +133,30 @@ Description:
 * `Operating system`: enduser's running OS and its architecture
 * `Version`: the enduser's current Agent version
 * `Status`: the real-time operational state of a device
-  
+
+More information from Agents is displayed inside:
 <img width="1854" height="1342" alt="image" src="https://github.com/user-attachments/assets/26d234ae-3a0f-4507-9d4b-b6893cf4f038" />
+
+To test it out, we will perform some task on the enduser's machine and track the activity on our SIEM:
+* Ubuntu-enduser:
+  
+<img width="807" height="89" alt="image" src="https://github.com/user-attachments/assets/1d06c06d-2ff3-4b8e-a9e9-df06fbe9c42b" />
+
+* Ubuntu-server:
+  
+<img width="1854" height="1430" alt="image" src="https://github.com/user-attachments/assets/3c0d96c9-bfd1-4ea4-b1b8-e9dfd95cabdf" />
+Immediately on SIEM at MITRE ATT&CK Box, we can see its different frameworks
+
+<img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/391955ad-5fc8-4251-a1aa-72e5160a6775" />
+One of the framework recorded our root escalation activities on enduser's machine 
+
+<img width="1855" height="811" alt="image" src="https://github.com/user-attachments/assets/6143ab20-8627-47da-81bb-0a511e406a08" />
+We also can research details of tactics inside MITRE ATT&CK page
+
 
 ___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
