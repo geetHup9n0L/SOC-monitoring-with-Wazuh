@@ -147,7 +147,7 @@ To test it out, we will perform some task on the enduser's machine and track the
 Immediately on SIEM at MITRE ATT&CK Box, we can see different attack frameworks are generated from Agent
 <img width="1854" height="1430" alt="image" src="https://github.com/user-attachments/assets/3c0d96c9-bfd1-4ea4-b1b8-e9dfd95cabdf" />
 
-One of the framework recorded our activities related to root escalation on enduser's machine 
+One of the framework is alerted via our activities related to root escalation on enduser's machine 
 <img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/391955ad-5fc8-4251-a1aa-72e5160a6775" />
 
 We also can research more on details of tactics inside MITRE ATT&CK page
@@ -162,6 +162,7 @@ Directing to Option/Explore/Discover, all the logs generated can be seen here
 
 ___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
