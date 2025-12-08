@@ -126,9 +126,17 @@ Installing Wazuh on Server:
 
 And here is our dashboard:
 <img width="1275" height="637" alt="image" src="https://github.com/user-attachments/assets/b7c66cf3-237c-434e-a9d9-aea9a71a2708" />
+Description:
+* `ID`: primary key for endusers' machines
+* `Name`: defined name of enduser's machine
+* `IP address`: enduser's IP address
+* `Operating system`: enduser's running OS and its architecture
+* `Version`: the enduser's current Agent version
+* `Status`: the real-time operational state of a device
 
 ___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
