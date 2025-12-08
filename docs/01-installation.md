@@ -26,10 +26,7 @@ Overview installation as mentioned:
 * 1 Ubuntu 24.04LTS (2): Wazuh Agents
 
 ### Wazuh Manager
-```
-- Setting up Wazuh on this Ubuntu VM as Wazuh Manager (Website using local IP) :
-  /ifconfig (inet)
-```
+
 We setup Ubuntu VM as a server to run the central components of Wazuh.
 
 This Wazuh server will run all the core components, and its where SIEM, Web application take place, as well as where all Agents send its reports to.
@@ -83,9 +80,7 @@ Installing Wazuh on Server:
 
 
 ### Wazuh Agents
-```
-- Clone another Ubuntu VM and Window VM as endpoints with Wazuh Agents
-```
+
   Now, to have Wazuh agents installed on endusers - our other VMs
 
   On top-left of homepage, we deploy new Agents:
@@ -144,24 +139,31 @@ To test it out, we will perform some task on the enduser's machine and track the
 
 * Ubuntu-server:
 
-Immediately on SIEM at MITRE ATT&CK Box, we can see different attack frameworks are generated from Agent
+Immediately on SIEM at `MITRE ATT&CK` Box, we can see different attack frameworks are generated from Agent
 <img width="1854" height="1430" alt="image" src="https://github.com/user-attachments/assets/3c0d96c9-bfd1-4ea4-b1b8-e9dfd95cabdf" />
 
 One of the framework is alerted via our activities related to root escalation on enduser's machine 
 <img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/391955ad-5fc8-4251-a1aa-72e5160a6775" />
 
-We also can research more on details of tactics inside MITRE ATT&CK page
+We also can research more on details of tactics inside `MITRE ATT&CK` page
 <img width="1855" height="879" alt="image" src="https://github.com/user-attachments/assets/f31fcfd9-ce60-4712-a989-5de3df79a033" />
 
 <img width="1855" height="811" alt="image" src="https://github.com/user-attachments/assets/6143ab20-8627-47da-81bb-0a511e406a08" />
 
-Directing to Option/Explore/Discover, all the logs generated can be seen here
+Directing to `Option/Explore/Discover`, all the logs generated can be seen here
 <img width="1852" height="813" alt="image" src="https://github.com/user-attachments/assets/053f5182-02e6-40d5-a219-f8469702e3a7" />
 <img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/3c5188df-ab47-41bc-a486-2ec85db0504e" />
 
+To monitor all security alerts from Wazuh rules, we visit `Threat Hunting` page:
+<img width="1593" height="1111" alt="image" src="https://github.com/user-attachments/assets/220bb592-0dd1-4c4a-a4bb-38d5ceafa741" />
+
+<img width="1593" height="1124" alt="image" src="https://github.com/user-attachments/assets/f4f53035-b2a4-40f9-9b6f-1d1ca61347e1" />
+
+Its for general security monitoring or threat hunting across all rules, different from MITRE ATT&CK which alerts that correspond to known attacker techniques.
 
 ___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
