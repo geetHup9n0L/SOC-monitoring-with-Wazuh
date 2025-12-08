@@ -143,17 +143,17 @@ To test it out, we will perform some task on the enduser's machine and track the
 <img width="807" height="89" alt="image" src="https://github.com/user-attachments/assets/1d06c06d-2ff3-4b8e-a9e9-df06fbe9c42b" />
 
 * Ubuntu-server:
-  
-<img width="1854" height="1430" alt="image" src="https://github.com/user-attachments/assets/3c0d96c9-bfd1-4ea4-b1b8-e9dfd95cabdf" />
+
 Immediately on SIEM at MITRE ATT&CK Box, we can see different attack frameworks are generated from Agent
+<img width="1854" height="1430" alt="image" src="https://github.com/user-attachments/assets/3c0d96c9-bfd1-4ea4-b1b8-e9dfd95cabdf" />
 
-<img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/391955ad-5fc8-4251-a1aa-72e5160a6775" />
 One of the framework recorded our activities related to root escalation on enduser's machine 
+<img width="1852" height="811" alt="image" src="https://github.com/user-attachments/assets/391955ad-5fc8-4251-a1aa-72e5160a6775" />
 
+We also can research more on details of tactics inside MITRE ATT&CK page
 <img width="1855" height="879" alt="image" src="https://github.com/user-attachments/assets/f31fcfd9-ce60-4712-a989-5de3df79a033" />
 
 <img width="1855" height="811" alt="image" src="https://github.com/user-attachments/assets/6143ab20-8627-47da-81bb-0a511e406a08" />
-We also can research more on details of tactics inside MITRE ATT&CK page
 
 Directing to Option/Explore/Discover, all the logs generated can be seen here
 <img width="1852" height="813" alt="image" src="https://github.com/user-attachments/assets/053f5182-02e6-40d5-a219-f8469702e3a7" />
@@ -162,6 +162,7 @@ Directing to Option/Explore/Discover, all the logs generated can be seen here
 
 ___
 More documentation at: https://documentation.wazuh.com/current/index.html
+
 
 
 
