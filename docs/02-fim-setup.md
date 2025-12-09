@@ -58,8 +58,6 @@ Our configuration:
 * `<directories></directories>`: this specifies the directories to be monitored
   * `realtime="yes"`: monitor directories in near real-time
   * `check_all="yes"`: check all properties available on the file (owner, checksum, size, modified date,...)
-<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/0b456117-4791-4ce5-b883-0ec317271812" />
-<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/81d7da72-939f-4666-9e76-9f99dab23efc" />
 <img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/bf55f045-7d8d-439c-8ab0-5577bea36417" />
 
 
@@ -71,6 +69,14 @@ To test it out, we will generate noises inside the `/Download/` directory:
 <img width="815" height="69" alt="image" src="https://github.com/user-attachments/assets/fc6823bf-c819-43db-a284-06f8438f3fe2" />
 
 <img width="815" height="50" alt="image" src="https://github.com/user-attachments/assets/ffc17a79-fac9-467a-a999-34b88e58d03f" />
+
+On Wazuh Dashboard, at FIM section, we instantly see changes in the directory (realtime monitoring works):
+<img width="1592" height="1607" alt="image" src="https://github.com/user-attachments/assets/1af198d6-d31e-4b85-97d7-6d6a172b8471" />
+
+More information can be found in `File Integrity Monitoring/Events` page:
+<img width="1593" height="986" alt="image" src="https://github.com/user-attachments/assets/d4f7092c-1327-4662-929e-b96996fb5808" />
+
+
 
 
 
