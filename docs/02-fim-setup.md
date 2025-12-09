@@ -68,10 +68,8 @@ systemctl restart wazuh-agent
 To test it out, we will generate noises inside the `/Download/` directory:
 <img width="815" height="69" alt="image" src="https://github.com/user-attachments/assets/fc6823bf-c819-43db-a284-06f8438f3fe2" />
 
-<img width="813" height="74" alt="image" src="https://github.com/user-attachments/assets/4e455e16-57eb-47ce-9b7e-5a377ead24f2" />
-<img width="818" height="55" alt="image" src="https://github.com/user-attachments/assets/9e0f9f8f-1455-40b8-84bc-180583609a71" />
-
 <img width="815" height="50" alt="image" src="https://github.com/user-attachments/assets/ffc17a79-fac9-467a-a999-34b88e58d03f" />
+
 
 
 
