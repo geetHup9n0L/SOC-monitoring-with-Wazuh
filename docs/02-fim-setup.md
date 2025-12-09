@@ -12,10 +12,24 @@ On Ubuntu-enduser's machine, we will have FIM monitoring a defined directory add
 ```
 ~/home/long/Downloads
 ```
+There are two methods of configuring FIM for Agents. They can either be configured locally with the Wazuh agent configuration file or remotely using the centralized configuration.
 
-And from Wazuh Server, and configure Agent centrally to run FIM on enduser's addition specific directory:
+From Wazuh Server, we will configure Agent centrally to run FIM on enduser's addition specific directory:
 
 Starting at main dashboard, we find `Menu/Agents management/Group`:
 <img width="1590" height="813" alt="image" src="https://github.com/user-attachments/assets/a6626044-ab96-403f-b8f9-a2b54621cdca" />
+```
+Groups are powerful management tools for organizing agents, allowing central configuration and tailored monitoring for different sets of devices through group-specific agent.conf files
+```
 
+Inside the page, we can see our `default group` containing both of Agents
 
+<img width="1591" height="585" alt="image" src="https://github.com/user-attachments/assets/809cd31c-c972-4797-8608-6deb4e174c48" />
+
+With Group, it would be ideal if for example, in the future we want to add more Agents, and we want the same configuration to be applied to those Agents accordingly. 
+
+The advantage would be that we wont have to manually configure its local .config file, which takes lot of time
+
+To access the agent.conf file, find the pencil icon at "Action" column:
+<img width="1590" height="603" alt="image" src="https://github.com/user-attachments/assets/03f8885e-677f-47a4-8767-680eee3bb3e6" />
+<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/5aed7e2e-c9c2-4dfa-ba68-e14100d64512" />
