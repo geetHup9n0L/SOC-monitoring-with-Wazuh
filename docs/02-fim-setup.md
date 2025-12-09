@@ -10,7 +10,7 @@ But its core function relies on explicitly defining the specific files and folde
 
 On Ubuntu-enduser's machine, we will have FIM monitoring a defined directory additionally:
 ```
-~/home/long/Downloads
+/home/long/Downloads
 ```
 There are two methods of configuring FIM for Agents. They can either be configured locally with the Wazuh agent configuration file or remotely using the centralized configuration.
 
@@ -33,3 +33,40 @@ The advantage would be that we wont have to manually configure its local .config
 To access the agent.conf file, find the pencil icon at "Action" column:
 <img width="1590" height="603" alt="image" src="https://github.com/user-attachments/assets/03f8885e-677f-47a4-8767-680eee3bb3e6" />
 <img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/5aed7e2e-c9c2-4dfa-ba68-e14100d64512" />
+
+We are working on Ubuntu-enduser's directory, and the centralized agent.config apply to all diffent machines. 
+
+To separate each OS sets, we have to specify the name of OS, in our case: `os=Linux`. So this config only apply to Linux-based machines
+```
+<agent_config os="Linux">
+
+  <!-- Shared agent configuration here -->
+
+</agent_config>
+```
+Our configuration:
+```
+<agent_config os="Linux">
+
+  <syscheck>
+      <directories realtime="yes" check_all="yes">/home/*/Download</directories>
+  </syscheck>
+
+</agent_config>
+```
+* `<syscheck> </syscheck>`: this configuration section is dedicated to FIM module config
+* `<directories></directories>`: this specifies the directories to be monitored
+  * `realtime="yes"`: monitor directories in near real-time
+  * `check_all="yes"`: check all properties available on the file (owner, checksum, size, modified date,...)
+<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/0b456117-4791-4ce5-b883-0ec317271812" />
+<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/81d7da72-939f-4666-9e76-9f99dab23efc" />
+
+Save the config, and restart the Agent on Ubuntu-enduser's machine to update the previous config file:
+```
+systemctl restart wazuh-agent
+```
+To test it out, we will generate noises inside the `/Download/` directory:
+<img width="813" height="74" alt="image" src="https://github.com/user-attachments/assets/4e455e16-57eb-47ce-9b7e-5a377ead24f2" />
+<img width="818" height="55" alt="image" src="https://github.com/user-attachments/assets/9e0f9f8f-1455-40b8-84bc-180583609a71" />
+
+
