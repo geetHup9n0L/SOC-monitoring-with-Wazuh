@@ -49,7 +49,7 @@ Our configuration:
 <agent_config os="Linux">
 
   <syscheck>
-      <directories realtime="yes" check_all="yes">/home/*/Download</directories>
+      <directories realtime="yes" check_all="yes">/home/*/Downloads</directories>
   </syscheck>
 
 </agent_config>
@@ -60,6 +60,8 @@ Our configuration:
   * `check_all="yes"`: check all properties available on the file (owner, checksum, size, modified date,...)
 <img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/0b456117-4791-4ce5-b883-0ec317271812" />
 <img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/81d7da72-939f-4666-9e76-9f99dab23efc" />
+<img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/bf55f045-7d8d-439c-8ab0-5577bea36417" />
+
 
 Save the config, and restart the Agent on Ubuntu-enduser's machine to update the previous config file:
 ```
@@ -69,6 +71,7 @@ To test it out, we will generate noises inside the `/Download/` directory:
 <img width="815" height="69" alt="image" src="https://github.com/user-attachments/assets/fc6823bf-c819-43db-a284-06f8438f3fe2" />
 
 <img width="815" height="50" alt="image" src="https://github.com/user-attachments/assets/ffc17a79-fac9-467a-a999-34b88e58d03f" />
+
 
 
 
