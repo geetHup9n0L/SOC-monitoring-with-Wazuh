@@ -34,9 +34,9 @@ To access the agent.conf file, find the pencil icon at "Action" column:
 <img width="1590" height="603" alt="image" src="https://github.com/user-attachments/assets/03f8885e-677f-47a4-8767-680eee3bb3e6" />
 <img width="1590" height="811" alt="image" src="https://github.com/user-attachments/assets/5aed7e2e-c9c2-4dfa-ba68-e14100d64512" />
 
-We are working on Ubuntu-enduser's directory, and the centralized agent.config apply to all diffent machines. 
+We are currently working on Ubuntu-enduser's directory, and the centralized agent.config apply to all different machines. 
 
-To separate each OS sets, we have to specify the name of OS, in our case: `os=Linux`. So this config only apply to Linux-based machines
+To avoid incompatible architecture, we separate each OS sets by specifying the name of OS, in our case: `os=Linux`. So this config only apply to Linux-based machines:
 ```
 <agent_config os="Linux">
 
@@ -75,6 +75,7 @@ On Wazuh Dashboard, at FIM section, we instantly see changes in the directory (r
 
 More information can be found in `File Integrity Monitoring/Events` page:
 <img width="1593" height="986" alt="image" src="https://github.com/user-attachments/assets/d4f7092c-1327-4662-929e-b96996fb5808" />
+
 
 
 
