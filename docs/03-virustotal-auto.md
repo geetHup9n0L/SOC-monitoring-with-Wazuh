@@ -38,7 +38,7 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   
   <img width="806" height="69" alt="image" src="https://github.com/user-attachments/assets/93846dc4-2347-492f-b4f7-9269374c70d4" />
   
-  * Inside the `ossec.conf` file, move to the bottom within the last `</ossec_config>...</ossec_config>` tag
+  * Inside the `ossec.conf` file, move to the bottom within the first main `<ossec_config>...</ossec_config>` block
   * Add the config module above to that section and save the config file:
     
   <img width="904" height="573" alt="image" src="https://github.com/user-attachments/assets/c5f4f1ec-046f-4a2c-a9fe-2144124d3f50" />
@@ -60,11 +60,14 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
 
   Back to our Wazuh server, we confirm the event if it's triggered by alert
 
+  
+
 
 ___
 More related documentations at:
 * Wazuh: https://documentation.wazuh.com/current/user-manual/capabilities/malware-detection/virus-total-integration.html
 * VirusTotal: https://docs.virustotal.com/
+
 
 
 
