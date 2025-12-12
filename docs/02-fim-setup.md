@@ -76,6 +76,9 @@ On Wazuh Dashboard, at FIM section, we instantly see changes in the directory (r
 More information can be found in `File Integrity Monitoring/Events` page:
 <img width="1593" height="986" alt="image" src="https://github.com/user-attachments/assets/d4f7092c-1327-4662-929e-b96996fb5808" />
 
+___
+
+More documentation at: https://documentation.wazuh.com/current/user-manual/capabilities/file-integrity/index.html
 
 
 
