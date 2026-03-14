@@ -8,7 +8,7 @@ Prerequisite:
   
   https://www.virustotal.com/gui/home/upload
   
-* To acquire VirusTotal automation process connected to Wazuh, we find its API Key:
+* To have VirusTotal automation process connected to Wazuh, we acquire its API Key:
 
   <img width="1349" height="823" alt="image" src="https://github.com/user-attachments/assets/afbda54b-91bb-4b30-a2ea-476907947645" />
   
@@ -19,7 +19,7 @@ Prerequisite:
   * `4 lookups / min`
   * `500 lookups / day`
   
-Now, we need to enable the VirusTotal integration into our Wazuh server:
+Now, we enable the VirusTotal integration into our Wazuh server:
 * First, add the integration module to Wazuh server's main configuration file, at:
   ```bash
   /var/ossec/etc/ossec.conf
@@ -38,8 +38,8 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   
   <img width="806" height="69" alt="image" src="https://github.com/user-attachments/assets/93846dc4-2347-492f-b4f7-9269374c70d4" />
   
-  * Inside the `ossec.conf` file, move to the bottom within the first main `<ossec_config>...</ossec_config>` block
-  * Add the config module above to that section and save the config file:
+  * Inside the `ossec.conf` file, move to the bottom within the `<ossec_config>...</ossec_config>` block
+  * Add the configuration block above to that section and save the config file:
     
   <img width="904" height="573" alt="image" src="https://github.com/user-attachments/assets/c5f4f1ec-046f-4a2c-a9fe-2144124d3f50" />
 
