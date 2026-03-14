@@ -60,7 +60,7 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
 
   Back to our Wazuh server, we can confirm the event if it's triggered by alerts. Specifically, go to this page `Threat Hunting/Event`:
 
-  
+  ![VirusTotal integration test](images/images1.png)
 
   
 
