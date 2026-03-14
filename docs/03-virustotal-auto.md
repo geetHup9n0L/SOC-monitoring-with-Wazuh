@@ -1,7 +1,7 @@
 # VirusTotal Integration:
 ### Overview:
-- Enables VirusTotal intergration into Wazuh server, requires VirusTotal’s API Key
-- Wazuh Config file at: `/var/ossec/etc/ossec.conf`, add the VTs API Key syntax to the config file
+
+In this case, we use the Wazuh File Integrity Monitoring (FIM) module to monitor a directory for any modifications and the VirusTotal API to scan the files in the directory. Then, configure Wazuh to trigger an active response script and remove files that VirusTotal detects as malicious. We test this use case on Ubuntu and Windows endpoints.
 ___
 Prerequisite:
 * Initially, we need to create an account on VirusTotal:
