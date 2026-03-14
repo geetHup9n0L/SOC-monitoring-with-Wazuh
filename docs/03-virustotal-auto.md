@@ -74,6 +74,65 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   
   There are 63/68 vendors detected the suspicuous `eicar` file and flagged it
 
+* After managing to detect the malicious files, we have to evaluate its severe level and remove it automatically
+
+  In order to implement that task, we have to add a script on Ubuntu-enduser's machine which has the Agent running. The script will be triggered when a malicious file is found via FIM and VirusTotal, and will then delete that file
+
+  Initially, we have to install `jq`, a utility that processes JSON input from the active response script
+  ```
+  sudo apt update
+  sudo apt -y install jq
+  ```
+  Then, we go to `/var/ossec/active-response/bin/` and create a `remove-threat.sh` script to actively remove malicious files from the enduser's machine. The content inside the script is already provided by Wazuh:
+  ```python
+  #!/bin/bash
+  
+  LOCAL=`dirname $0`;
+  cd $LOCAL
+  cd ../
+  
+  PWD=`pwd`
+  
+  read INPUT_JSON
+  FILENAME=$(echo $INPUT_JSON | jq -r .parameters.alert.data.virustotal.source.file)
+  COMMAND=$(echo $INPUT_JSON | jq -r .command)
+  LOG_FILE="${PWD}/../logs/active-responses.log"
+  
+  #------------------------ Analyze command -------------------------#
+  if [ ${COMMAND} = "add" ]
+  then
+   # Send control message to execd
+   printf '{"version":1,"origin":{"name":"remove-threat","module":"active-response"},"command":"check_keys", "parameters":{"keys":[]}}\n'
+  
+   read RESPONSE
+   COMMAND2=$(echo $RESPONSE | jq -r .command)
+   if [ ${COMMAND2} != "continue" ]
+   then
+    echo "`date '+%Y/%m/%d %H:%M:%S'` $0: $INPUT_JSON Remove threat active response aborted" >> ${LOG_FILE}
+    exit 0;
+   fi
+  fi
+  
+  # Removing file
+  rm -f $FILENAME
+  if [ $? -eq 0 ]; then
+   echo "`date '+%Y/%m/%d %H:%M:%S'` $0: $INPUT_JSON Successfully removed threat" >> ${LOG_FILE}
+  else
+   echo "`date '+%Y/%m/%d %H:%M:%S'` $0: $INPUT_JSON Error removing threat" >> ${LOG_FILE}
+  fi
+  
+  exit 0;
+  ```
+  Beside that, we also have to be sure that Wazuh can access to the script by modifying the file ownership and permissions:
+  ```
+  sudo chmod 750 /var/ossec/active-response/bin/remove-threat.sh
+  sudo chown root:wazuh /var/ossec/active-response/bin/remove-threat.sh
+  ```
+  and finally, restart the agent to apply the changes:
+  ```
+  sudo systemctl restart wazuh-agent
+  ```
+
 ___
 More related documentations at:
 * Wazuh: https://documentation.wazuh.com/current/user-manual/capabilities/malware-detection/virus-total-integration.html
