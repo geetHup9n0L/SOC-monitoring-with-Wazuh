@@ -11,6 +11,8 @@ VirusTotal is a website that scans files, webpages, domains, and IPs, against a 
 
 ## [1. Environment Setup & Installation:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/01-installation.md)
 
+## [1. Environment Setup & Installation:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/blob/main/docs/01-installation.md)
+
 ## [2. Configuring FIM:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/02-fim-setup.md)
 
 ## [3. Automation Logic:](https://github.com/geetHup9n0L/SOC-monitoring-with-Wazuh/edit/main/docs/03-automation.md)
