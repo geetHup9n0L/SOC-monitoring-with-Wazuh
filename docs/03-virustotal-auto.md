@@ -132,8 +132,8 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   ```
   sudo systemctl restart wazuh-agent
   ```
-  Now to trigger the script properly, we also have to configure on Wazuh Server so the server can use the script whenever alerts are on
-  * Go to `/var/ossec/etc/ossec.conf` config file, and find the active response modulo section:
+  Now to trigger the script properly, we also have to configure on Wazuh Server so the server knows to use the script whenever alerts are on
+  * Go to `/var/ossec/etc/ossec.conf` config file, and find the active response configuration section:
 
   ![VirusTotal integration test](images/images5.png)
 
@@ -149,10 +149,46 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   ![VirusTotal integration test](images/image6.png)
   
   * And then enable the active response by uncommenting and modifying its configuration block:
+  ```
+  <active-response>
+    <disabled>no</disabled>
+    <command>remove-threat</command>
+    <location>local</location>
+    <rules_id>87105</rules_id>
+  </active-response>
+  ```
  
   ![VirusTotal integration test](images/image7.png)
 
+    * `<command>remove-threat</command>`: referencing the command block we set above
+    * `<location>local</location>`: the script will run locally on the Agent
+    * `<rules_id>87105</rules_id>`: set the rule_id to rule.id of the one from VirusTotal
+
   ![VirusTotal integration test](images/image8.png)
+
+  Restart the Manager:
+  ```
+  systemctl restart wazuh-manager
+  ```
+* To test the active response function, we download/create the `eicar` file again on Ubuntu-enduser's machine:
+
+  ![VirusTotal integration test](images/images9.png)
+
+  ![VirusTotal integration test](images/image10.png)
+
+  ![VirusTotal integration test](images/image11.png)
+
+  The `eicar` right away is removed from the directory, so the script works
+
+  We can confirm this in the SIEMs logs as well, again at `Threat Hunting/Events`:
+
+  ![VirusTotal integration test](images/image12.png)
+
+  Inspecting further inside the Active respone's alerts, we have more information:
+
+  ![VirusTotal integration test](images/image13.png)
+
+  ![VirusTotal integration test](images/image14.png)
 
 ___
 More related documentations at:
