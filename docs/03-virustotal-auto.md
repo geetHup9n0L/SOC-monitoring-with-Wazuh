@@ -132,6 +132,27 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
   ```
   sudo systemctl restart wazuh-agent
   ```
+  Now to trigger the script properly, we also have to configure on Wazuh Server so the server can use the script whenever alerts are on
+  * Go to `/var/ossec/etc/ossec.conf` config file, and find the active response modulo section:
+
+  ![VirusTotal integration test](images/images5.png)
+
+  * Add this code block:
+  ```
+  <command>
+    <name>remove-threat</name>
+    <executable>remove-threat.py</executable>
+    <timeout_allowed>no</timeout_allowed>
+  </command>
+  ```
+
+  ![VirusTotal integration test](images/image6.png)
+  
+  * And then enable the active response by uncommenting and modifying its configuration block:
+ 
+  ![VirusTotal integration test](images/image7.png)
+
+  ![VirusTotal integration test](images/image8.png)
 
 ___
 More related documentations at:
