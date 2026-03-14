@@ -68,9 +68,9 @@ Now, we need to enable the VirusTotal integration into our Wazuh server:
 
   Following the provided URL, VirusTotal would present what detection it found with the `eicar` we previously installed on our enduser's machine:
 
-  ![VirusTotal integration test](images/images3.png)
+  ![VirusTotal integration test](images/image3.png)
 
-  ![VirusTotal integration test](images/images4.png)
+  ![VirusTotal integration test](images/image4.png)
   
   There are 63/68 vendors detected the suspicuous `eicar` file and flagged it
 
